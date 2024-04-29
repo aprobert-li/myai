@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/panda-syntax-dark.min.css"/>
+    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="footerArea">
+        <div id="inputarea">
+            <textarea id="prompt"></textarea>
+            <button type="submit" id="submitbtn">Chat</button>
+            <h5 id="waiting" class="hide">Waiting...</h5>
+            <button id="download">Download</button>
+        </div>
+        
+    </div>
+    
+    <!-- Display chat -->
+    <div id="replies">
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

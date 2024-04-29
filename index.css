@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+#footerArea {
+    width: 100vw;
+    background-color: #F9FAFA;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    bottom: 0;
+    z-index: 999;
+}
+
+#inputarea {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+}
+
+#prompt {
+    border: 3px solid gainsboro;
+    width: 70%;
+    resize: none;
+    font-size: larger;
+    font-family: 'Rubik', sans-serif;
+    padding: 0.2em;
+}
+#prompt:focus {
+    outline: none;
+    border: 3px solid gray;
+}
+#submitbtn {
+    border: 2px solid black;
+    background-color: dodgerblue;
+    width: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 0 2%;
+    box-shadow: 0.3em 0.4em black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    font-weight: 900;
+    cursor: pointer;
+}
+#submitbtn:hover {
+    box-shadow: 0.1em 0.2em black;
+}
+
+#replies {
+    width: 80vw;
+    padding-top: 1em;
+    padding-bottom: 28vh;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: auto;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    color: gray;
+    font-size: medium;
+    font-weight: 300;
+}
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    color: black;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+.question {
+    color: dodgerblue;
+}
+
+.newest {
+    color: black;
+}
+
+#waiting {
+    font-family: 'Rubik', sans-serif;
+    padding: 0.5em;
+    font-weight: 300;
+    color: dodgerblue;
+}
+
+.hide {
+    opacity: 0;
+}
+
+/* Apply the animation to your text element */
+.pulsing {
+    animation: pulseAnimation 1s infinite; 
+}
+
+/* Keyframes for the pulsing effect */
+@keyframes pulseAnimation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+#download {
+    border: 1px solid black;
+    background-color:gainsboro;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin: 0 2%;
+    box-shadow: 0.2em 0.3em black;
+    font-family: 'Rubik', sans-serif;
+    font-size: smaller;
+    font-weight: 100;
+    cursor: pointer;
+}
+#download:hover {
+    box-shadow: 0.1em 0.2em black;
+}
